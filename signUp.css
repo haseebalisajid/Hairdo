@@ -1,0 +1,61 @@
+body {
+    font-family: Arial;
+    color: white;
+}
+
+.split {
+    height: 92%;
+    width: 35%;
+    position: fixed;
+    top: 4%;
+    overflow-x: hidden;
+    box-shadow: -9px 4px 16px -9px grey;
+}
+.split2 {
+    height: 92%;
+    width: 65%;
+    position: fixed;
+    z-index: -1;
+    top: 4%;
+    overflow-x: hidden;
+    box-shadow: 10px 4px 16px -9px grey;
+}
+.left {
+    left: 4%;
+    background-color: white;
+}
+
+.right {
+    right: 4%;
+    background-color: white;
+}
+
+.centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+img {
+    width: 347px !important;
+    }
+.loginbox input{
+    width: 60%;
+    margin-bottom: 20px;
+}
+.loginbox input[type="text"], input[type="password"], input[type="date"]
+{
+    border: none;
+    border-bottom: 0.2px solid rgb(14, 13, 13);
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.loginbox input[type="checkbox"]{
+    float: right!important;
+}

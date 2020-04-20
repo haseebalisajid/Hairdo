@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking</title>
+	<link rel="stylesheet" type="text/css" href="book.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!--Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+</head>
+<body>
+	<div class="Contact" id="cont">
+		<h1>Dummy Data For SEC Project</h1>
+		<h2>Let's Enter Some Information!</h2>
+
+		<p>-------------------------------------------------------------------</p>
+		
+			<h3>First Name</h3>
+		    <input type="text" id="firstName"  placeholder="First Name.." required>
+		    <h3>Last Name</h3>	
+		    <input type="text" id="lastName"  placeholder="Last name.." required>
+		    <h3>E-Mail</h3>
+			<input type="text" id="email"  placeholder="E-mail.." required>
+			<h3>Password</h3>
+		    <input type="password" id="password" placeholder="password" required>
+		    <h3>Category</h3>
+		    <select name="Provinces" id="category">
+		    	<div class="prov" style="width: 200px">
+		    		<option  selected="selected" required>Choose an option</option>
+			    	<option>Hair Cut</option>
+					<option>Facial</option>
+					<option>Manicure</option>
+					<option>Padicure</option>
+					<option>Hair Treatment</option>
+				</div>
+			</select> 
+		    <h3>Date</h3>
+		    <input type="Date" id="date" required></br>
+			<button id="signUpBtn" class="btn btn-outline-dark" style="margin-top: 20px;">Sign Up</button>
+	    
+	    <p style="font-family: font-family, 'Montserrat', sans-serif; font-size: 14px, ">Copyrights &copy;2019 Photobook.All Rights Reserved</p>
+
+	</div>
+	<script type="text/javascript" src="book.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="back">
+      <div class="split left">
+        <div class="centered">
+          <img src="img.png" alt="" />
+        </div>
+      </div>
+      <div class="split2 right">
+        <div class="centered">
+            <h1>WELCOME TO HAIRDO</h1>
+            <h5>Join our community to make your business better and vast</h5>
+            <div class="loginbox p-4"> 
+                <input type="text"  placeholder="Email" id="email" required></br>
+                <input type="password"  placeholder="password" id="password" required></br>
+                <span>
+                  <input  type="checkbox" onclick="showPassword()"> Show Password </br>
+              </span>
+              <button id="loginBtn" onclick="check()" class="btn btn-outline-dark">Log In</button>
+            </div>    
+        </div>
+      </div>
+    </div>
+    <script >
+        let str = window.localStorage;
+        let name="admin@hairdo.com";
+        let password=1234567;
+        str.setItem("email",name);
+        str.setItem("password",password);
+        function showPassword() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+        function check(){
+            let nam = document.getElementById("email");
+            let pas = document.getElementById("password");
+            let nn=str.getItem('email');
+            let ps=str.getItem('password');
+            if(nam.value == nn && pas.value == ps){
+                console.log("log in");
+                window.location.href=
+                "http://127.0.0.1:5500/Dashboard/admin.html";
+            }
+            else{
+                console.log("Invalid Email or Password");
+            }
+        }
+    </script>
+  </body>
+</html>

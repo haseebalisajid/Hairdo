@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="front.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+        <h1 class="heading">WELCOME TO HAIRDO</h1>
+        <h5 class="heading">Join our community to make your business better and vast</h5>
+    <div class="back">
+      <div class="split left">
+        <div class="centered">
+                <img onclick="fun2()" src="admin.png" alt="" />
+                <h2 class="imgDEs"><a href="adminLogin.html" style="color:black"> Admin</a></h2>
+        </div>
+      </div> 
+      <div class="split2 right">
+        <div class="centered">
+            <div class="loginbox p-4"> 
+                    <img onclick="fun()" src="admin.png" alt="" />
+                <h2 class="imgDEs"><a href="main.html" style="color:black"> Saloon</a></h2>
+            </div>     
+        </div>
+      </div>
+    </div>
+    <script >
+        function fun(){
+            window.location.href =
+            "http://127.0.0.1:5500/main.html";
+        }
+        function fun2(){
+            window.location.href =
+            "http://127.0.0.1:5500/adminLogin.html";
+        }
+    </script>
+  </body>
+</html>
